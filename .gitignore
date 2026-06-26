@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Xcode build output
+build/
+DerivedData/
+*.xcarchive
+
+# Xcode user state
+xcuserdata/
+*.xcuserstate
+
+# Vercel
+.vercel/
+
+# Misc
+*.zip

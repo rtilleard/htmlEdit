@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>htmlEdit — Edit HTML like a document</title>
+<style>
+  :root{ color-scheme: light; }
+  *{box-sizing:border-box;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+       color:#1a1a1a; background:#f5f5f3; margin:0; min-height:100vh;
+       display:flex; align-items:center; justify-content:center; padding:24px;}
+  .card{text-align:center; max-width:460px;}
+  .mark{width:96px; height:96px; margin:0 auto 28px; background:#fff;
+        border:1px solid rgba(0,0,0,.07); border-radius:22px;
+        box-shadow:0 10px 28px rgba(0,0,0,.12);
+        display:flex; align-items:center; justify-content:center;
+        font-family:Georgia,"Times New Roman",serif; font-size:46px; color:#222;}
+  h1{font-size:32px; margin:0 0 10px;}
+  .sub{color:#5a5a5a; font-size:17px; line-height:1.5; margin:0 0 34px;}
+  .cta{display:inline-block; text-decoration:none; color:#1a1a1a;
+       background:#fff; border:1px solid rgba(0,0,0,.09); border-radius:13px;
+       padding:15px 26px; font-size:15px; font-weight:600;
+       box-shadow:0 8px 20px rgba(0,0,0,.10); transition:box-shadow .15s, transform .15s;}
+  .cta:hover{box-shadow:0 12px 28px rgba(0,0,0,.16); transform:translateY(-1px);}
+  .cta .small{display:block; font-size:11px; font-weight:500; color:#888; letter-spacing:.04em;}
+  .note{margin-top:18px; color:#999; font-size:13px;}
+  .links{margin-top:46px; font-size:14px;}
+  .links a{color:#2a7af6; text-decoration:none; margin:0 10px;}
+  .links a:hover{text-decoration:underline;}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="mark">¶</div>
+    <h1>htmlEdit</h1>
+    <p class="sub">Edit HTML like a document. Point, click, type —<br>right on the live page. No code.</p>
+
+    <!-- Once live, replace href with the Mac App Store URL and delete the .note line. -->
+    <a class="cta" href="#">
+      <span class="small">DOWNLOAD ON THE</span>
+      Mac App Store
+    </a>
+    <div class="note">Coming soon to the Mac App Store.</div>
+
+    <div class="links">
+      <a href="/privacy">Privacy</a>
+      <a href="mailto:robtilleard@gmail.com">Contact</a>
+    </div>
+  </div>
+</body>
+</html>
