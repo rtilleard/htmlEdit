@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Claude and Codex as a Team: Divide the Work, Not the Context | htmlEdit</title>
+<meta name="description" content="How I run Claude and Codex as a two-person team: split the work along clean seams so neither loses the plot, and keep the context tidy.">
+<link rel="canonical" href="https://htmledit.io/blog/claude-and-codex-team">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Robbie Tilleard">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="htmlEdit">
+<meta property="og:title" content="Claude and Codex as a Team: Divide the Work, Not the Context">
+<meta property="og:description" content="How I run Claude and Codex as a two-person team: split the work along clean seams so neither loses the plot, and keep the context tidy.">
+<meta property="og:url" content="https://htmledit.io/blog/claude-and-codex-team">
+<meta property="og:image" content="https://htmledit.io/og.png">
+<meta property="article:published_time" content="2026-07-02">
+<meta property="article:modified_time" content="2026-07-02">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Claude and Codex as a Team: Divide the Work, Not the Context">
+<meta name="twitter:description" content="How I run Claude and Codex as a two-person team: split the work along clean seams so neither loses the plot, and keep the context tidy.">
+<meta name="twitter:image" content="https://htmledit.io/og.png">
+<meta name="twitter:creator" content="@rtilleard">
+<link rel="icon" href="/icon.png" type="image/png">
+<link rel="stylesheet" href="/blog/blog.css">
+<link rel="alternate" type="application/rss+xml" title="htmlEdit blog" href="/feed.xml">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"Claude and Codex as a Team: Divide the Work, Not the Context","description":"How I run Claude and Codex as a two-person team: split the work along clean seams so neither loses the plot, and keep the context tidy.","datePublished":"2026-07-02","dateModified":"2026-07-02","author":{"@type":"Person","name":"Robbie Tilleard","url":"https://robbietilleard.com","sameAs":["https://twitter.com/rtilleard","https://www.linkedin.com/in/robert-tilleard/"]},"publisher":{"@type":"Organization","name":"htmlEdit","logo":{"@type":"ImageObject","url":"https://htmledit.io/icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://htmledit.io/blog/claude-and-codex-team"},"url":"https://htmledit.io/blog/claude-and-codex-team","image":"https://htmledit.io/og.png","keywords":"ai-tools, workflow, coding","articleSection":"Productivity","inLanguage":"en","wordCount":748}
+</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/"><span class="mark">¶</span> htmlEdit</a>
+  <nav>
+    <a href="/blog/">Blog</a>
+    <a href="/#download">Get the app</a>
+  </nav>
+</header>
+<main>
+<article>
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a></nav>
+  <header class="post-head">
+    <h1>Claude and Codex as a Team: Divide the Work, Not the Context</h1>
+    <p class="byline">By <a href="https://robbietilleard.com" rel="author">Robbie Tilleard</a> · <time datetime="2026-07-02">2 July 2026</time> · 4 min read</p>
+  </header>
+  <div class="tldr"><strong>In short:</strong> Treat Claude and Codex like two colleagues who don't share a memory. Give each a self-contained job with clear inputs and outputs, and you get more done than trying to run one giant conversation.</div>
+  <div class="post-body">
+<p>If you want two AI assistants to help you build something, the trick is to divide the work, not the context between them. Give Claude and Codex each a clean, self-contained job, and they get on with it. Try to run one enormous shared conversation across both and you get mush: two assistants half-aware of a problem, neither fully responsible for any part of it.</p><p>I've landed on a simple mental model. Think of them as two capable colleagues who happen to have no shared memory. Everything one knows, the other doesn't, unless you tell it. That constraint sounds like a handicap. In practice it forces you to do the one thing that makes delegation work with people too: write a brief that stands on its own.</p><h2>Split along seams, not down the middle</h2><p>The instinct when you have two helpers is to halve the task. Don't. Halving a task usually means slicing through the middle of a problem, and now each assistant needs the other's half to make sense of its own. That's where things fall apart.</p><p>Instead, look for natural seams. A seam is a place where the work already comes apart cleanly: the data layer and the interface, the feature and its tests, the thing you're building and the thing that checks it. When I was working on <a href="https://htmledit.io">htmlEdit</a>, a small tool for editing HTML documents by pointing and clicking rather than re-prompting, the seams were obvious once I looked. One assistant could focus on how the editing behaved on the page. The other could focus on the packaging and the plumbing around it. Neither needed to hold the whole thing in its head.</p><p>The test for a good seam: can you describe one side of it without constantly referring to the other? If yes, you've found a place to divide the work. If every sentence starts with "well, it depends on what the other part does," you're cutting through the middle, not along a seam.</p><h2>Each brief has to stand alone</h2><p>Once you've split along a seam, write each assistant a brief it can act on cold. State the goal, the inputs it has, the output you want, and the constraints. Don't assume it remembers a decision you made an hour ago in a different window, because it doesn't.</p><p>This feels like extra work. It is, slightly. But it's the same discipline that makes a good ticket or a good handover note, and it pays off twice: the assistant does better work, and you understand your own problem more clearly for having written it down. Half the time I catch a muddled requirement while drafting the brief, before either assistant touches it.</p><p>A rough shape I use:</p><ul><li><strong>Goal:</strong> one sentence on what done looks like.</li><li><strong>Inputs:</strong> the files, data, or context it needs, pasted or pointed to directly.</li><li><strong>Output:</strong> what I want back, and in what form.</li><li><strong>Constraints:</strong> what not to touch, and any rules that matter.</li></ul><h2>You are the shared memory</h2><p>Here's the part people skip. If the two assistants don't share context, something has to. That something is you. Your job in this setup is to hold the shared picture, reconcile what comes back, and decide what happens next, rather than to type prompts. You're the tech lead, not a relay.</p><p>That reframing changes how it feels. You stop trying to keep two conversations perfectly in sync and start treating each as a source of work you'll review and integrate. When Codex hands back one piece and Claude hands back another, the reconciling happens on your desk. Sometimes they disagree, and the disagreement is useful: it surfaces an assumption you hadn't made explicit.</p><p>The payoff is real. Small, well-scoped jobs are easier to check than one sprawling conversation where you've lost track of what was decided and when. You can hold a self-contained piece of work in your head, spot when it's wrong, and send it back with a clear correction. Try doing that across a 300-message thread and you'll miss things.</p><p>None of this depends on the specific tools. It's an operating model: divide the work along clean seams, brief each side so it stands alone, and keep the shared picture yourself. Do that, and two assistants genuinely add up to more than one. Skip it, and you've just doubled the number of conversations you can't quite follow. If you want the companion piece on choosing between them for a given job, see <a href="/blog/when-claude-when-codex">when to reach for each one</a>.</p>
+  </div>
+  <section class="takeaways"><h2>Key takeaways</h2><ul><li>Two assistants beat one when the work splits cleanly into separate jobs.</li>
+<li>The failure mode is a bloated shared context nobody can hold, not the models.</li>
+<li>Hand each assistant a brief it can act on without the other's history.</li>
+<li>Reconcile the outputs yourself; you're the shared memory.</li>
+<li>Small, well-defined tasks are easier to check than one sprawling one.</li></ul></section>
+  <aside class="cta">
+    <p><strong>htmlEdit</strong> lets you edit AI-generated HTML documents visually, then save them. It is a Mac app and a browser extension, it is local and private, and it is <a href="https://github.com/rtilleard/htmlEdit">open source</a>.</p>
+    <p><a class="btn" href="/#download">Get htmlEdit</a></p>
+  </aside>
+  <section class="related"><h2>Related reading</h2><ul><li><a href="/blog/why-ai-writes-html">Why AI Tools Keep Giving You HTML (and Why That's a Gift)</a></li>
+<li><a href="/blog/html-as-a-document">The Case for HTML as a Document Format</a></li>
+<li><a href="/blog/last-mile-editing">The Last-Mile Problem: Editing AI Output Without Re-Prompting</a></li></ul></section>
+</article>
+</main>
+<footer class="sitefoot">
+  <p><a href="/">htmlEdit</a> , edit HTML documents like a document. <a href="/blog/">Blog</a> · <a href="/privacy">Privacy</a> · <a href="https://github.com/rtilleard/htmlEdit">Open source</a></p>
+  <p class="muted">Written by <a href="https://robbietilleard.com" rel="author">Robbie Tilleard</a>.</p>
+</footer>
+</body>
+</html>

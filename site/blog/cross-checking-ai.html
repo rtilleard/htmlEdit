@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Using One AI to Check Another's Work | htmlEdit</title>
+<meta name="description" content="A simple, reliable habit: have one AI assistant review what another produced. Why a fresh set of eyes catches what the author misses.">
+<link rel="canonical" href="https://htmledit.io/blog/cross-checking-ai">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Robbie Tilleard">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="htmlEdit">
+<meta property="og:title" content="Using One AI to Check Another's Work">
+<meta property="og:description" content="A simple, reliable habit: have one AI assistant review what another produced. Why a fresh set of eyes catches what the author misses.">
+<meta property="og:url" content="https://htmledit.io/blog/cross-checking-ai">
+<meta property="og:image" content="https://htmledit.io/og.png">
+<meta property="article:published_time" content="2026-07-07">
+<meta property="article:modified_time" content="2026-07-07">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Using One AI to Check Another's Work">
+<meta name="twitter:description" content="A simple, reliable habit: have one AI assistant review what another produced. Why a fresh set of eyes catches what the author misses.">
+<meta name="twitter:image" content="https://htmledit.io/og.png">
+<meta name="twitter:creator" content="@rtilleard">
+<link rel="icon" href="/icon.png" type="image/png">
+<link rel="stylesheet" href="/blog/blog.css">
+<link rel="alternate" type="application/rss+xml" title="htmlEdit blog" href="/feed.xml">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"Using One AI to Check Another's Work","description":"A simple, reliable habit: have one AI assistant review what another produced. Why a fresh set of eyes catches what the author misses.","datePublished":"2026-07-07","dateModified":"2026-07-07","author":{"@type":"Person","name":"Robbie Tilleard","url":"https://robbietilleard.com","sameAs":["https://twitter.com/rtilleard","https://www.linkedin.com/in/robert-tilleard/"]},"publisher":{"@type":"Organization","name":"htmlEdit","logo":{"@type":"ImageObject","url":"https://htmledit.io/icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://htmledit.io/blog/cross-checking-ai"},"url":"https://htmledit.io/blog/cross-checking-ai","image":"https://htmledit.io/og.png","keywords":"ai-tools, workflow, quality","articleSection":"Productivity","inLanguage":"en","wordCount":697}
+</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/"><span class="mark">¶</span> htmlEdit</a>
+  <nav>
+    <a href="/blog/">Blog</a>
+    <a href="/#download">Get the app</a>
+  </nav>
+</header>
+<main>
+<article>
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a></nav>
+  <header class="post-head">
+    <h1>Using One AI to Check Another's Work</h1>
+    <p class="byline">By <a href="https://robbietilleard.com" rel="author">Robbie Tilleard</a> · <time datetime="2026-07-07">7 July 2026</time> · 4 min read</p>
+  </header>
+  <div class="tldr"><strong>In short:</strong> Have one AI review what the other produced, cold, without the original conversation. A fresh reviewer with no attachment to the work catches errors the author glides past. You still make the final call.</div>
+  <div class="post-body">
+<p>Here's a habit worth building: whenever one AI assistant produces something that matters, have the other one check it. Not as a rubber stamp, but as a genuine review, done cold, by an assistant that never saw the conversation that produced the work. It catches things. Reliably. And it costs you almost nothing.</p><p>The reason it works is the same reason human code review works, and it has nothing to do with the reviewer being smarter. The reviewer simply has no attachment to the work and no memory of the reasoning that led to it. The assistant that wrote something is, in a loose sense, committed to it. It built a line of thinking and the output sits at the end of that line. A second assistant, handed just the result, has no such commitment. It reads what's actually there, not what was meant.</p><h2>Fresh eyes beat clever eyes</h2><p>When you write something yourself, you read what you intended. Your eyes slide over the gap between what you meant and what you actually wrote, because your brain helpfully fills it in. AI assistants have a version of the same problem. Inside a long conversation, the assumptions pile up, and the assistant carries all of them forward, including the wrong ones.</p><p>Strip that away and things change. Hand the output to a fresh assistant with none of that history, and it evaluates what's in front of it on its own terms. It doesn't know what you meant, so it can only respond to what you said. That's precisely the value. The gap between intent and result is where bugs live, and a cold reviewer stands right on top of it.</p><p>This is why I don't just ask the same assistant "are you sure?" A tired reviewer and a tired author sharing the same context give you one viewpoint asked twice, not two. The fresh context is the whole point.</p><h2>How to run the check</h2><p>The mechanics are simple, and a couple of details matter.</p><ul><li><strong>Give it the output and the goal, not the chat.</strong> Paste in what was produced and a plain statement of what it was meant to achieve. Don't hand over the original conversation, because that just re-imports the assumptions you were trying to escape.</li><li><strong>Ask it to find problems, not to approve.</strong> "Is this fine?" invites a yes. "What's wrong with this, where could it fail, what did the author likely overlook?" invites actual scrutiny. Frame the job as fault-finding.</li><li><strong>Read the review as evidence, not a verdict.</strong> The reviewer will sometimes flag things that are fine and miss things that aren't. You're still the judge. The review is input to your decision, not a replacement for it.</li></ul><p>I used this constantly while building <a href="https://htmledit.io">htmlEdit</a>, my visual editor for AI-generated HTML documents. When one assistant produced a chunk of logic I couldn't fully vouch for, I'd hand it to the other cold and ask what was wrong with it. Often the answer was "nothing obvious," which was reassuring. Sometimes it was a specific, real problem the first assistant had glided straight past. Either way, I knew more than I did before.</p><h2>It doesn't replace understanding</h2><p>One caution, because it's easy to over-trust this. A cross-check is not permission to stop understanding the work yourself. If both assistants are confidently wrong about the same thing, and that happens, the review will sail through and you'll merge a mistake with two approvals attached. That's arguably worse than one, because it feels safe.</p><p>So treat the cross-check as one layer, not the whole defence. It pairs with the discipline I keep coming back to: never merge what you don't understand, which I've written about in <a href="/blog/pair-programming-with-ai">lessons from shipping htmlEdit</a>. The review sharpens your understanding; it doesn't substitute for it. When the reviewer flags something, the real value comes next: you now have to go and understand whether the flag is right, and in doing so you understand the work.</p><p>Used that way, it's one of the highest-return habits I've picked up. Two assistants, one building and one checking, with you holding the final say. Simple, cheap, and it catches the errors that would otherwise catch you.</p>
+  </div>
+  <section class="takeaways"><h2>Key takeaways</h2><ul><li>A second assistant reviewing cold catches what the first missed.</li>
+<li>The value is the fresh context, not a second opinion for its own sake.</li>
+<li>Give the reviewer the output and the goal, not the original chat.</li>
+<li>Ask it to find problems, not to bless the work.</li>
+<li>You're still the judge; the review is evidence, not a verdict.</li></ul></section>
+  <aside class="cta">
+    <p><strong>htmlEdit</strong> lets you edit AI-generated HTML documents visually, then save them. It is a Mac app and a browser extension, it is local and private, and it is <a href="https://github.com/rtilleard/htmlEdit">open source</a>.</p>
+    <p><a class="btn" href="/#download">Get htmlEdit</a></p>
+  </aside>
+  <section class="related"><h2>Related reading</h2><ul><li><a href="/blog/why-ai-writes-html">Why AI Tools Keep Giving You HTML (and Why That's a Gift)</a></li>
+<li><a href="/blog/html-as-a-document">The Case for HTML as a Document Format</a></li>
+<li><a href="/blog/last-mile-editing">The Last-Mile Problem: Editing AI Output Without Re-Prompting</a></li></ul></section>
+</article>
+</main>
+<footer class="sitefoot">
+  <p><a href="/">htmlEdit</a> , edit HTML documents like a document. <a href="/blog/">Blog</a> · <a href="/privacy">Privacy</a> · <a href="https://github.com/rtilleard/htmlEdit">Open source</a></p>
+  <p class="muted">Written by <a href="https://robbietilleard.com" rel="author">Robbie Tilleard</a>.</p>
+</footer>
+</body>
+</html>

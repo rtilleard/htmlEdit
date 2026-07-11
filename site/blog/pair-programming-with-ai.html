@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pair-Programming With Two AIs: Lessons From Shipping htmlEdit | htmlEdit</title>
+<meta name="description" content="What I learned running two AI assistants like a pair-programming team while building htmlEdit: keep them scoped, stay the driver, and review everything.">
+<link rel="canonical" href="https://htmledit.io/blog/pair-programming-with-ai">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Robbie Tilleard">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="htmlEdit">
+<meta property="og:title" content="Pair-Programming With Two AIs: Lessons From Shipping htmlEdit">
+<meta property="og:description" content="What I learned running two AI assistants like a pair-programming team while building htmlEdit: keep them scoped, stay the driver, and review everything.">
+<meta property="og:url" content="https://htmledit.io/blog/pair-programming-with-ai">
+<meta property="og:image" content="https://htmledit.io/og.png">
+<meta property="article:published_time" content="2026-07-08">
+<meta property="article:modified_time" content="2026-07-08">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pair-Programming With Two AIs: Lessons From Shipping htmlEdit">
+<meta name="twitter:description" content="What I learned running two AI assistants like a pair-programming team while building htmlEdit: keep them scoped, stay the driver, and review everything.">
+<meta name="twitter:image" content="https://htmledit.io/og.png">
+<meta name="twitter:creator" content="@rtilleard">
+<link rel="icon" href="/icon.png" type="image/png">
+<link rel="stylesheet" href="/blog/blog.css">
+<link rel="alternate" type="application/rss+xml" title="htmlEdit blog" href="/feed.xml">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"Pair-Programming With Two AIs: Lessons From Shipping htmlEdit","description":"What I learned running two AI assistants like a pair-programming team while building htmlEdit: keep them scoped, stay the driver, and review everything.","datePublished":"2026-07-08","dateModified":"2026-07-08","author":{"@type":"Person","name":"Robbie Tilleard","url":"https://robbietilleard.com","sameAs":["https://twitter.com/rtilleard","https://www.linkedin.com/in/robert-tilleard/"]},"publisher":{"@type":"Organization","name":"htmlEdit","logo":{"@type":"ImageObject","url":"https://htmledit.io/icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://htmledit.io/blog/pair-programming-with-ai"},"url":"https://htmledit.io/blog/pair-programming-with-ai","image":"https://htmledit.io/og.png","keywords":"coding, workflow, ai-tools","articleSection":"Productivity","inLanguage":"en","wordCount":746}
+</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/"><span class="mark">¶</span> htmlEdit</a>
+  <nav>
+    <a href="/blog/">Blog</a>
+    <a href="/#download">Get the app</a>
+  </nav>
+</header>
+<main>
+<article>
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a></nav>
+  <header class="post-head">
+    <h1>Pair-Programming With Two AIs: Lessons From Shipping htmlEdit</h1>
+    <p class="byline">By <a href="https://robbietilleard.com" rel="author">Robbie Tilleard</a> · <time datetime="2026-07-08">8 July 2026</time> · 5 min read</p>
+  </header>
+  <div class="tldr"><strong>In short:</strong> Pair-programming with two AIs works if you stay the driver and treat them as navigators. Keep tasks scoped, review everything before it lands, and don't let either run ahead of your understanding.</div>
+  <div class="post-body">
+<p>Pair-programming with two AI assistants sounds like a gimmick until you actually do it. Then it becomes ordinary, useful, and occasionally humbling. I built <a href="https://htmledit.io">htmlEdit</a>, a small tool for editing HTML documents visually by pointing and clicking instead of re-prompting, with two assistants working alongside me. Here's what held up and what didn't.</p><p>The mental model that worked was old-fashioned pair-programming, where one person drives and the other navigates. I stayed the driver throughout. The assistants navigated: suggesting, drafting, spotting things I'd miss. The moment I let one take the wheel, quietly accepting whatever it produced, quality dropped and I stopped understanding my own project.</p><h2>Stay the driver</h2><p>Driving means you decide direction, you type the final word on what lands, and you hold the map. It's tempting to let a capable assistant just go, especially when it's producing plausible work fast. Resist that. The speed is real, but speed you can't follow just piles up debt you'll pay back later with interest, usually while debugging something you never actually read.</p><p>Concretely, staying the driver meant I read everything before it went in. Not skimmed, read. If a change was too large to read properly, that was a signal the task was scoped wrong, not a reason to trust it more. Which brings me to the thing that mattered most.</p><h2>Scope so you can review in one sitting</h2><p>The single biggest lever was task size. A task scoped so its output fits in one review sitting is one you can actually check. A task that sprawls across dozens of changes is one you'll wave through because reviewing it properly feels like more work than writing it yourself would have been.</p><p>So I kept each job small enough to hold in my head. Build this one behaviour. Handle this one edge case. Wire up this one piece. When I felt the urge to ask for something big and vague, that was usually a sign I hadn't thought it through, and the fix was to break it down, not to hope the assistant would.</p><p>This has a nice side effect. Small tasks are also the ones you can hand cleanly to either assistant, because they don't need much shared history to make sense. Scope and delegation solve the same problem from two directions.</p><h2>Never merge what you don't understand</h2><p>This is the rule I'd carve above the desk. Plausible is not the same as correct, and AI-generated code is extremely good at looking plausible. It reads well. It's confidently structured. And sometimes it's quietly wrong in a way that only bites three weeks later.</p><p>So the rule was simple: if I didn't understand why a change worked, it didn't land, no matter how good it looked. Sometimes that meant asking the assistant to explain itself. Sometimes it meant asking the other assistant to look at it cold, which I've written about in <a href="/blog/cross-checking-ai">using one AI to check another's work</a>. Either way, understanding came before merging, every time. The few occasions I broke that rule are, predictably, the ones that cost me later.</p><h3>Let them disagree</h3><p>One unexpected benefit of running two assistants: they don't always agree, and the disagreement is a gift. When one suggests an approach and the other, looking at the same problem fresh, suggests something different, the gap between them is almost always a place where I'd left something unspecified. The disagreement surfaces the assumption I forgot to make.</p><p>I started deliberately using this. When a decision felt important and I wasn't sure, I'd get a view from each and read the difference rather than the answers. The point wasn't to hold a vote. It was to see the seam in my own thinking that the two of them had each filled in differently.</p><h2>Momentum is the real risk</h2><p>If I had to name the one thing that catches people out, it's momentum. Two capable assistants produce work fast enough that it's genuinely thrilling, and thrill makes you sloppy. You start accepting more, reading less, understanding later. The project accelerates away from your comprehension of it.</p><p>The discipline is boring and it's the whole game: when you notice you've stopped following, stop. Read back. Rebuild your understanding before you write another line. The assistants will happily keep going without you. Your job is to make sure the thing you ship is a thing you actually understand. That's what separates a tool you built from a pile of code you're merely standing next to.</p>
+  </div>
+  <section class="takeaways"><h2>Key takeaways</h2><ul><li>You're the driver, not a spectator; the assistants navigate.</li>
+<li>Scope each task so you can review the result in one sitting.</li>
+<li>Never merge code you don't understand, however plausible it looks.</li>
+<li>Let the two assistants disagree; it exposes hidden assumptions.</li>
+<li>Momentum is the real risk. Slow down when you stop following.</li></ul></section>
+  <aside class="cta">
+    <p><strong>htmlEdit</strong> lets you edit AI-generated HTML documents visually, then save them. It is a Mac app and a browser extension, it is local and private, and it is <a href="https://github.com/rtilleard/htmlEdit">open source</a>.</p>
+    <p><a class="btn" href="/#download">Get htmlEdit</a></p>
+  </aside>
+  <section class="related"><h2>Related reading</h2><ul><li><a href="/blog/why-ai-writes-html">Why AI Tools Keep Giving You HTML (and Why That's a Gift)</a></li>
+<li><a href="/blog/html-as-a-document">The Case for HTML as a Document Format</a></li>
+<li><a href="/blog/last-mile-editing">The Last-Mile Problem: Editing AI Output Without Re-Prompting</a></li></ul></section>
+</article>
+</main>
+<footer class="sitefoot">
+  <p><a href="/">htmlEdit</a> , edit HTML documents like a document. <a href="/blog/">Blog</a> · <a href="/privacy">Privacy</a> · <a href="https://github.com/rtilleard/htmlEdit">Open source</a></p>
+  <p class="muted">Written by <a href="https://robbietilleard.com" rel="author">Robbie Tilleard</a>.</p>
+</footer>
+</body>
+</html>

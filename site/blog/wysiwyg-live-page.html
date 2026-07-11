@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WYSIWYG vs Raw Code: Editing on the Live Page | htmlEdit</title>
+<meta name="description" content="Editing raw HTML is fiddly and error-prone. Editing the live rendered page is faster and safer. Here is why WYSIWYG wins for documents.">
+<link rel="canonical" href="https://htmledit.io/blog/wysiwyg-live-page">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Robbie Tilleard">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="htmlEdit">
+<meta property="og:title" content="WYSIWYG vs Raw Code: Editing on the Live Page">
+<meta property="og:description" content="Editing raw HTML is fiddly and error-prone. Editing the live rendered page is faster and safer. Here is why WYSIWYG wins for documents.">
+<meta property="og:url" content="https://htmledit.io/blog/wysiwyg-live-page">
+<meta property="og:image" content="https://htmledit.io/og.png">
+<meta property="article:published_time" content="2026-06-01">
+<meta property="article:modified_time" content="2026-06-01">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="WYSIWYG vs Raw Code: Editing on the Live Page">
+<meta name="twitter:description" content="Editing raw HTML is fiddly and error-prone. Editing the live rendered page is faster and safer. Here is why WYSIWYG wins for documents.">
+<meta name="twitter:image" content="https://htmledit.io/og.png">
+<meta name="twitter:creator" content="@rtilleard">
+<link rel="icon" href="/icon.png" type="image/png">
+<link rel="stylesheet" href="/blog/blog.css">
+<link rel="alternate" type="application/rss+xml" title="htmlEdit blog" href="/feed.xml">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"WYSIWYG vs Raw Code: Editing on the Live Page","description":"Editing raw HTML is fiddly and error-prone. Editing the live rendered page is faster and safer. Here is why WYSIWYG wins for documents.","datePublished":"2026-06-01","dateModified":"2026-06-01","author":{"@type":"Person","name":"Robbie Tilleard","url":"https://robbietilleard.com","sameAs":["https://twitter.com/rtilleard","https://www.linkedin.com/in/robert-tilleard/"]},"publisher":{"@type":"Organization","name":"htmlEdit","logo":{"@type":"ImageObject","url":"https://htmledit.io/icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://htmledit.io/blog/wysiwyg-live-page"},"url":"https://htmledit.io/blog/wysiwyg-live-page","image":"https://htmledit.io/og.png","keywords":"wysiwyg, html, editing, tools","articleSection":"Productivity","inLanguage":"en","wordCount":691}
+</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/"><span class="mark">¶</span> htmlEdit</a>
+  <nav>
+    <a href="/blog/">Blog</a>
+    <a href="/#download">Get the app</a>
+  </nav>
+</header>
+<main>
+<article>
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a></nav>
+  <header class="post-head">
+    <h1>WYSIWYG vs Raw Code: Editing on the Live Page</h1>
+    <p class="byline">By <a href="https://robbietilleard.com" rel="author">Robbie Tilleard</a> · <time datetime="2026-06-01">1 June 2026</time> · 5 min read</p>
+  </header>
+  <div class="tldr"><strong>In short:</strong> Editing the live rendered page, what you see is what you get, is faster and less error-prone than hand-editing raw HTML. For documents, it is almost always the right choice.</div>
+  <div class="post-body">
+<p>There are two ways to change an HTML document. You can open the raw code and edit the tags, or you can edit the rendered page directly, seeing your changes as you make them. The second approach is called WYSIWYG, what you see is what you get, and for anyone editing a document rather than building software, it wins almost every time. Here is why the gap is so wide.</p><h2>What editing raw code actually asks of you</h2><p>When you open the source of an HTML document, you are not looking at the document. You are looking at a set of instructions for how to build it. To change a sentence you first have to find it inside the tags, work out which brackets belong to it, make your edit without disturbing the surrounding markup, then mentally render the result to check you got it right.</p><p>That is a lot of overhead for changing a few words. And it is fragile. Delete one closing tag by accident and the layout can collapse from that point down. Put a bit of text in the wrong place and it might not appear at all. You get no warning; you just save, reopen the page, and discover the damage. For someone who does not write code daily, this is genuinely stressful, and the fear of breaking something makes people avoid editing at all.</p><h2>What WYSIWYG changes</h2><p>WYSIWYG removes the translation step. You see the finished document, exactly as it will look, and you change it in place. Click on the paragraph you want to fix and type. Select a sentence and delete it. The thing you are editing and the thing you will end up with are the same thing.</p><p>This is not a new idea. It is how every word processor has worked for decades, and it is why nobody edits a letter by writing formatting codes. We long ago decided that for documents, you should manipulate the document, not a description of it. The oddity is that AI-generated HTML briefly took us backwards, handing people a great document in a format they felt they could only edit through the code.</p><p>The practical wins stack up fast:</p><ul><li><strong>Speed.</strong> No hunting through tags. You go straight to the words on the page.</li><li><strong>Safety.</strong> You cannot orphan a closing tag you never touched. The structure stays intact underneath.</li><li><strong>Confidence.</strong> You see the result as you make it, so there is no save-and-pray moment.</li><li><strong>Access.</strong> Anyone who can use a word processor can do it. No code literacy required.</li></ul><h2>When raw code still makes sense</h2><p>I am not claiming raw editing is useless. If you are a developer building a web page, working in the code is the right place to be, because you need control over precisely how everything is constructed. Structure is the job. Complex layouts, interactive behaviour and reusable components genuinely live in the markup.</p><p>But a memo is not a web app. When the task is to fix a title, cut a line or correct a figure in a finished document, the code is just a barrier between you and a two-second change. The skill it demands buys you nothing, because you did not want to change the structure in the first place. You wanted to change the words.</p><h2>The right tool for a document</h2><p>The way to think about it: match the tool to the task. Building something structural, work in the code. Editing something written, work on the page. Most of what AI hands you, memos, briefs, one-pagers, recipes, falls squarely in the second camp.</p><p>That is the whole idea behind <a href="https://htmledit.io">htmlEdit</a>. You point, click and type directly on the rendered document, just like editing in Word, and the HTML updates itself underneath. Your files stay on your device, and you never have to open a tag to fix a typo. If you have been avoiding editing AI output because the code looked intimidating, that instinct was correct. The answer was never to get better at reading markup. It was to stop having to. For more on why re-prompting is not the fix either, see <a href="/blog/last-mile-editing">the last-mile problem</a>.</p>
+  </div>
+  <section class="takeaways"><h2>Key takeaways</h2><ul><li>Raw HTML editing forces you to hold the layout in your head.</li>
+<li>One misplaced tag can break the whole document.</li>
+<li>WYSIWYG lets you change what you see, where you see it.</li>
+<li>For documents, the mental cost of raw code is rarely worth it.</li></ul></section>
+  <aside class="cta">
+    <p><strong>htmlEdit</strong> lets you edit AI-generated HTML documents visually, then save them. It is a Mac app and a browser extension, it is local and private, and it is <a href="https://github.com/rtilleard/htmlEdit">open source</a>.</p>
+    <p><a class="btn" href="/#download">Get htmlEdit</a></p>
+  </aside>
+  <section class="related"><h2>Related reading</h2><ul><li><a href="/blog/why-ai-writes-html">Why AI Tools Keep Giving You HTML (and Why That's a Gift)</a></li>
+<li><a href="/blog/html-as-a-document">The Case for HTML as a Document Format</a></li>
+<li><a href="/blog/last-mile-editing">The Last-Mile Problem: Editing AI Output Without Re-Prompting</a></li></ul></section>
+</article>
+</main>
+<footer class="sitefoot">
+  <p><a href="/">htmlEdit</a> , edit HTML documents like a document. <a href="/blog/">Blog</a> · <a href="/privacy">Privacy</a> · <a href="https://github.com/rtilleard/htmlEdit">Open source</a></p>
+  <p class="muted">Written by <a href="https://robbietilleard.com" rel="author">Robbie Tilleard</a>.</p>
+</footer>
+</body>
+</html>

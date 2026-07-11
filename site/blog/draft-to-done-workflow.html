@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>From Draft to Done: A Workflow for AI Documents | htmlEdit</title>
+<meta name="description" content="A simple, repeatable workflow for finishing AI-generated documents: draft with the model, edit on the page, and know when to stop prompting.">
+<link rel="canonical" href="https://htmledit.io/blog/draft-to-done-workflow">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Robbie Tilleard">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="htmlEdit">
+<meta property="og:title" content="From Draft to Done: A Workflow for AI Documents">
+<meta property="og:description" content="A simple, repeatable workflow for finishing AI-generated documents: draft with the model, edit on the page, and know when to stop prompting.">
+<meta property="og:url" content="https://htmledit.io/blog/draft-to-done-workflow">
+<meta property="og:image" content="https://htmledit.io/og.png">
+<meta property="article:published_time" content="2026-06-26">
+<meta property="article:modified_time" content="2026-06-26">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="From Draft to Done: A Workflow for AI Documents">
+<meta name="twitter:description" content="A simple, repeatable workflow for finishing AI-generated documents: draft with the model, edit on the page, and know when to stop prompting.">
+<meta name="twitter:image" content="https://htmledit.io/og.png">
+<meta name="twitter:creator" content="@rtilleard">
+<link rel="icon" href="/icon.png" type="image/png">
+<link rel="stylesheet" href="/blog/blog.css">
+<link rel="alternate" type="application/rss+xml" title="htmlEdit blog" href="/feed.xml">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"From Draft to Done: A Workflow for AI Documents","description":"A simple, repeatable workflow for finishing AI-generated documents: draft with the model, edit on the page, and know when to stop prompting.","datePublished":"2026-06-26","dateModified":"2026-06-26","author":{"@type":"Person","name":"Robbie Tilleard","url":"https://robbietilleard.com","sameAs":["https://twitter.com/rtilleard","https://www.linkedin.com/in/robert-tilleard/"]},"publisher":{"@type":"Organization","name":"htmlEdit","logo":{"@type":"ImageObject","url":"https://htmledit.io/icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://htmledit.io/blog/draft-to-done-workflow"},"url":"https://htmledit.io/blog/draft-to-done-workflow","image":"https://htmledit.io/og.png","keywords":"workflow, documents, productivity","articleSection":"Productivity","inLanguage":"en","wordCount":651}
+</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/"><span class="mark">¶</span> htmlEdit</a>
+  <nav>
+    <a href="/blog/">Blog</a>
+    <a href="/#download">Get the app</a>
+  </nav>
+</header>
+<main>
+<article>
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a></nav>
+  <header class="post-head">
+    <h1>From Draft to Done: A Workflow for AI Documents</h1>
+    <p class="byline">By <a href="https://robbietilleard.com" rel="author">Robbie Tilleard</a> · <time datetime="2026-06-26">26 June 2026</time> · 5 min read</p>
+  </header>
+  <div class="tldr"><strong>In short:</strong> Split the work into two modes: use the model to draft and restructure, then switch to editing the rendered document directly for everything else. Knowing when to switch is the whole skill.</div>
+  <div class="post-body">
+<p>Most people get stuck finishing AI documents because they use one tool for two different jobs. Drafting and finishing need different modes, and the skill is knowing when to switch. Here is the workflow I have settled on after doing this most days.</p><h2>Mode one: draft with the model</h2><p>The model is brilliant at the blank page and at rearranging. Use it for exactly that. Give it the raw material, ask for a structure, and iterate on the shape. Change the order of sections, merge two that overlap, ask for a summary line at the top, cut a section that is not pulling its weight. This is where conversation earns its keep, because you are making big, structural moves and the model can do them faster than you can.</p><p>Stay at this altitude for as long as the changes are structural. If you are moving whole sections around or changing the argument, you are still drafting. Keep going.</p><h2>The switch: when structure stops moving</h2><p>There is a moment where the document stops changing shape and starts only needing small fixes. A word here. A heading that is slightly wrong. A number you want to phrase more carefully. A sentence that runs too long. That moment is your signal to switch modes.</p><p>Almost everyone misses it. They keep using the chat for the small stuff, and it goes badly for two reasons. First, it is slow: describing a two-word change takes longer than making it. Second, and worse, the model regenerates the whole document to make your one change, and it quietly rewrites three things you were already happy with. Now you are proofreading the entire thing again to catch what it broke. That is how a finished document slips back to unfinished.</p><h2>Mode two: finish on the page</h2><p>Once you are past structure, work on the rendered document directly. Open the page, read it as your reader will, and fix things where you see them. Editing in place is faster and safer than re-prompting because you change exactly what you meant to and nothing else.</p><p>This is why I built <a href="https://htmledit.io">htmlEdit</a>. It lets you edit an AI-generated HTML document by pointing, clicking and typing on the page itself, the way you would in a word processor, instead of hand-editing raw HTML or going back to the chat. The point is to make the finishing mode as frictionless as the drafting mode, so switching between them is natural rather than a chore.</p><p>The mental model I use: the model owns the first draft and the big restructures. I own the last mile. The last mile is judgement, taste and small corrections, and those are all quicker to apply by hand than to explain in a prompt.</p><h2>The loop, start to finish</h2><ol><li><strong>Brief.</strong> Tell the model what the document is, who it is for, and what it needs to do.</li><li><strong>Draft.</strong> Get a first version as a clean, self-contained HTML file.</li><li><strong>Restructure.</strong> Iterate on shape and order in the chat while the changes are still structural.</li><li><strong>Switch.</strong> When only small fixes remain, stop prompting.</li><li><strong>Finish.</strong> Edit the rendered page directly: wording, headings, small layout tweaks.</li><li><strong>Ship.</strong> Save, share, done.</li></ol><h2>Why a repeatable loop beats a clever prompt</h2><p>People spend a lot of energy hunting for the perfect prompt that produces a finished document in one shot. It does not exist, and chasing it is a waste of time, because the last ten percent is always specific to you and your reader in ways a prompt cannot capture. A reliable two-mode loop gets you a good document every time. A clever prompt gets you a lucky one occasionally.</p><p>Get the habit right and the tooling matters less than the discipline: draft big, finish small, and know the moment to change gears. If you want the tactical side of getting cleaner drafts to begin with, I wrote about <a href="/blog/prompting-for-clean-html">prompting for clean, editable HTML</a>.</p>
+  </div>
+  <section class="takeaways"><h2>Key takeaways</h2><ul><li>Treat drafting and finishing as two separate modes.</li>
+<li>Use the model for structure and heavy lifting, not fine polish.</li>
+<li>Switch to direct editing once the shape is right.</li>
+<li>Re-prompting small changes is slow and risks undoing good work.</li>
+<li>A repeatable loop beats a clever one-off prompt.</li></ul></section>
+  <aside class="cta">
+    <p><strong>htmlEdit</strong> lets you edit AI-generated HTML documents visually, then save them. It is a Mac app and a browser extension, it is local and private, and it is <a href="https://github.com/rtilleard/htmlEdit">open source</a>.</p>
+    <p><a class="btn" href="/#download">Get htmlEdit</a></p>
+  </aside>
+  <section class="related"><h2>Related reading</h2><ul><li><a href="/blog/why-ai-writes-html">Why AI Tools Keep Giving You HTML (and Why That's a Gift)</a></li>
+<li><a href="/blog/html-as-a-document">The Case for HTML as a Document Format</a></li>
+<li><a href="/blog/last-mile-editing">The Last-Mile Problem: Editing AI Output Without Re-Prompting</a></li></ul></section>
+</article>
+</main>
+<footer class="sitefoot">
+  <p><a href="/">htmlEdit</a> , edit HTML documents like a document. <a href="/blog/">Blog</a> · <a href="/privacy">Privacy</a> · <a href="https://github.com/rtilleard/htmlEdit">Open source</a></p>
+  <p class="muted">Written by <a href="https://robbietilleard.com" rel="author">Robbie Tilleard</a>.</p>
+</footer>
+</body>
+</html>

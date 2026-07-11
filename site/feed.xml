@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel>
+    <title>htmlEdit Blog</title>
+    <link>https://htmledit.io/blog/</link>
+    <description>Editing HTML documents, Claude and Codex, and AI productivity.</description>
+    <language>en</language>
+    <item>
+      <title>The Future of Documents: Editable, Portable, AI-Native</title>
+      <link>https://htmledit.io/blog/future-of-documents</link>
+      <guid>https://htmledit.io/blog/future-of-documents</guid>
+      <pubDate>Sat, 11 Jul 2026 09:00:00 GMT</pubDate>
+      <description>The document of the future is AI-native but human-editable, portable rather than trapped in a vendor's format, and built on the open web. HTML is quietly becoming that format.</description>
+    </item>
+    <item>
+      <title>Small Tools, Big Leverage: The Case for Single-Purpose Apps</title>
+      <link>https://htmledit.io/blog/small-single-purpose-tools</link>
+      <guid>https://htmledit.io/blog/small-single-purpose-tools</guid>
+      <pubDate>Fri, 10 Jul 2026 09:00:00 GMT</pubDate>
+      <description>A tool that does one thing well beats a bloated platform that does ten things adequately. Small single-purpose apps are easier to learn, faster to use, and harder to get wrong.</description>
+    </item>
+    <item>
+      <title>What I Learned Building a Mac App With Claude</title>
+      <link>https://htmledit.io/blog/building-a-mac-app-with-claude</link>
+      <guid>https://htmledit.io/blog/building-a-mac-app-with-claude</guid>
+      <pubDate>Thu, 09 Jul 2026 09:00:00 GMT</pubDate>
+      <description>Building a Mac app with an AI coding assistant sped up the mechanical parts and let me stay in the interesting decisions, but it moved the hard work to judgement: deciding what to build and knowing when the generated code was actually right.</description>
+    </item>
+    <item>
+      <title>Pair-Programming With Two AIs: Lessons From Shipping htmlEdit</title>
+      <link>https://htmledit.io/blog/pair-programming-with-ai</link>
+      <guid>https://htmledit.io/blog/pair-programming-with-ai</guid>
+      <pubDate>Wed, 08 Jul 2026 09:00:00 GMT</pubDate>
+      <description>Pair-programming with two AIs works if you stay the driver and treat them as navigators. Keep tasks scoped, review everything before it lands, and don't let either run ahead of your understanding.</description>
+    </item>
+    <item>
+      <title>Using One AI to Check Another's Work</title>
+      <link>https://htmledit.io/blog/cross-checking-ai</link>
+      <guid>https://htmledit.io/blog/cross-checking-ai</guid>
+      <pubDate>Tue, 07 Jul 2026 09:00:00 GMT</pubDate>
+      <description>Have one AI review what the other produced, cold, without the original conversation. A fresh reviewer with no attachment to the work catches errors the author glides past. You still make the final call.</description>
+    </item>
+    <item>
+      <title>When to Reach for Claude, When to Reach for Codex</title>
+      <link>https://htmledit.io/blog/when-claude-when-codex</link>
+      <guid>https://htmledit.io/blog/when-claude-when-codex</guid>
+      <pubDate>Sun, 05 Jul 2026 09:00:00 GMT</pubDate>
+      <description>Don't pick a favourite and use it for everything. Match the assistant to the shape of the job: one for framing and judgement, the other for grinding through well-defined code. In practice you'll switch mid-task.</description>
+    </item>
+    <item>
+      <title>Keeping Your Data Local When You Edit AI Docs</title>
+      <link>https://htmledit.io/blog/keep-your-data-local</link>
+      <guid>https://htmledit.io/blog/keep-your-data-local</guid>
+      <pubDate>Sat, 04 Jul 2026 09:00:00 GMT</pubDate>
+      <description>Editing an AI-generated document should not mean uploading it to someone else's server. Local, private tools keep your work on your machine, with no account, no upload and no tracking.</description>
+    </item>
+    <item>
+      <title>Claude and Codex as a Team: Divide the Work, Not the Context</title>
+      <link>https://htmledit.io/blog/claude-and-codex-team</link>
+      <guid>https://htmledit.io/blog/claude-and-codex-team</guid>
+      <pubDate>Thu, 02 Jul 2026 09:00:00 GMT</pubDate>
+      <description>Treat Claude and Codex like two colleagues who don't share a memory. Give each a self-contained job with clear inputs and outputs, and you get more done than trying to run one giant conversation.</description>
+    </item>
+    <item>
+      <title>The Two-Second Rule for Capturing Ideas</title>
+      <link>https://htmledit.io/blog/two-second-capture</link>
+      <guid>https://htmledit.io/blog/two-second-capture</guid>
+      <pubDate>Wed, 01 Jul 2026 09:00:00 GMT</pubDate>
+      <description>If capturing an idea takes more than about two seconds, you'll lose most of your ideas. Build a capture system with almost zero friction and sort things later, not in the moment.</description>
+    </item>
+    <item>
+      <title>An EAST Framework for AI Productivity</title>
+      <link>https://htmledit.io/blog/east-framework-ai</link>
+      <guid>https://htmledit.io/blog/east-framework-ai</guid>
+      <pubDate>Mon, 29 Jun 2026 09:00:00 GMT</pubDate>
+      <description>Getting value from AI is a behaviour-change problem, not a tooling problem. Apply EAST (Easy, Attractive, Social, Timely) to your own workflow so the useful action becomes the default one.</description>
+    </item>
+    <item>
+      <title>From Draft to Done: A Workflow for AI Documents</title>
+      <link>https://htmledit.io/blog/draft-to-done-workflow</link>
+      <guid>https://htmledit.io/blog/draft-to-done-workflow</guid>
+      <pubDate>Fri, 26 Jun 2026 09:00:00 GMT</pubDate>
+      <description>Split the work into two modes: use the model to draft and restructure, then switch to editing the rendered document directly for everything else. Knowing when to switch is the whole skill.</description>
+    </item>
+    <item>
+      <title>Turn a Claude Chat Into a Polished One-Pager</title>
+      <link>https://htmledit.io/blog/chat-to-one-pager</link>
+      <guid>https://htmledit.io/blog/chat-to-one-pager</guid>
+      <pubDate>Tue, 23 Jun 2026 09:00:00 GMT</pubDate>
+      <description>Ask the AI to produce a self-contained HTML one-pager instead of a wall of chat text, then fix the last ten percent visually rather than re-prompting.</description>
+    </item>
+    <item>
+      <title>Prompting for Clean, Editable HTML</title>
+      <link>https://htmledit.io/blog/prompting-for-clean-html</link>
+      <guid>https://htmledit.io/blog/prompting-for-clean-html</guid>
+      <pubDate>Fri, 19 Jun 2026 09:00:00 GMT</pubDate>
+      <description>Ask for a single self-contained HTML file with clear structure and inline styles, and you get a document you can edit later instead of a tangle you have to re-prompt.</description>
+    </item>
+    <item>
+      <title>How to Review AI-Generated Content Without Losing an Afternoon</title>
+      <link>https://htmledit.io/blog/review-ai-content-fast</link>
+      <guid>https://htmledit.io/blog/review-ai-content-fast</guid>
+      <pubDate>Tue, 16 Jun 2026 09:00:00 GMT</pubDate>
+      <description>Don't review AI content by reading top to bottom like a proof-reader. Check the big things first (structure, claims, facts), fix errors directly in the document, and leave line-level polish for last.</description>
+    </item>
+    <item>
+      <title>The Human-in-the-Loop Advantage: Why Editing Beats Regenerating</title>
+      <link>https://htmledit.io/blog/human-in-the-loop</link>
+      <guid>https://htmledit.io/blog/human-in-the-loop</guid>
+      <pubDate>Fri, 12 Jun 2026 09:00:00 GMT</pubDate>
+      <description>When an AI document is nearly right, editing the specific bits that are wrong is faster and more reliable than regenerating the whole thing and hoping the good parts survive.</description>
+    </item>
+    <item>
+      <title>Stop Re-Prompting: A Faster Loop for Fixing AI Drafts</title>
+      <link>https://htmledit.io/blog/stop-re-prompting</link>
+      <guid>https://htmledit.io/blog/stop-re-prompting</guid>
+      <pubDate>Tue, 09 Jun 2026 09:00:00 GMT</pubDate>
+      <description>When an AI draft is 90 percent right, don't re-prompt to fix the last 10 percent. Edit the output directly, because re-prompting risks losing the good parts and burns your time.</description>
+    </item>
+    <item>
+      <title>The Last-Mile Problem: Editing AI Output Without Re-Prompting</title>
+      <link>https://htmledit.io/blog/last-mile-editing</link>
+      <guid>https://htmledit.io/blog/last-mile-editing</guid>
+      <pubDate>Fri, 05 Jun 2026 09:00:00 GMT</pubDate>
+      <description>Re-prompting to make small edits is slow and unpredictable. For final tweaks, edit the rendered document directly instead of asking the AI to regenerate it.</description>
+    </item>
+    <item>
+      <title>WYSIWYG vs Raw Code: Editing on the Live Page</title>
+      <link>https://htmledit.io/blog/wysiwyg-live-page</link>
+      <guid>https://htmledit.io/blog/wysiwyg-live-page</guid>
+      <pubDate>Mon, 01 Jun 2026 09:00:00 GMT</pubDate>
+      <description>Editing the live rendered page, what you see is what you get, is faster and less error-prone than hand-editing raw HTML. For documents, it is almost always the right choice.</description>
+    </item>
+    <item>
+      <title>The Case for HTML as a Document Format</title>
+      <link>https://htmledit.io/blog/html-as-a-document</link>
+      <guid>https://htmledit.io/blog/html-as-a-document</guid>
+      <pubDate>Thu, 28 May 2026 09:00:00 GMT</pubDate>
+      <description>HTML is portable, universal, single-file and free of proprietary lock-in. For everyday documents it beats the usual word-processor and PDF defaults on almost every practical measure.</description>
+    </item>
+    <item>
+      <title>Why AI Tools Keep Giving You HTML (and Why That's a Gift)</title>
+      <link>https://htmledit.io/blog/why-ai-writes-html</link>
+      <guid>https://htmledit.io/blog/why-ai-writes-html</guid>
+      <pubDate>Sun, 24 May 2026 09:00:00 GMT</pubDate>
+      <description>AI tools default to HTML because it is structured, universal and easy to render. That is a gift: you get a portable, editable document instead of a screenshot or a locked format.</description>
+    </item>
+</channel></rss>

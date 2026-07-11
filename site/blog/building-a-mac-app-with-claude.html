@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What I Learned Building a Mac App With Claude | htmlEdit</title>
+<meta name="description" content="Notes from building a Mac app with an AI coding assistant: where it sped me up, where I had to slow it down, and what actually changed about the work.">
+<link rel="canonical" href="https://htmledit.io/blog/building-a-mac-app-with-claude">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Robbie Tilleard">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="htmlEdit">
+<meta property="og:title" content="What I Learned Building a Mac App With Claude">
+<meta property="og:description" content="Notes from building a Mac app with an AI coding assistant: where it sped me up, where I had to slow it down, and what actually changed about the work.">
+<meta property="og:url" content="https://htmledit.io/blog/building-a-mac-app-with-claude">
+<meta property="og:image" content="https://htmledit.io/og.png">
+<meta property="article:published_time" content="2026-07-09">
+<meta property="article:modified_time" content="2026-07-09">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What I Learned Building a Mac App With Claude">
+<meta name="twitter:description" content="Notes from building a Mac app with an AI coding assistant: where it sped me up, where I had to slow it down, and what actually changed about the work.">
+<meta name="twitter:image" content="https://htmledit.io/og.png">
+<meta name="twitter:creator" content="@rtilleard">
+<link rel="icon" href="/icon.png" type="image/png">
+<link rel="stylesheet" href="/blog/blog.css">
+<link rel="alternate" type="application/rss+xml" title="htmlEdit blog" href="/feed.xml">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"What I Learned Building a Mac App With Claude","description":"Notes from building a Mac app with an AI coding assistant: where it sped me up, where I had to slow it down, and what actually changed about the work.","datePublished":"2026-07-09","dateModified":"2026-07-09","author":{"@type":"Person","name":"Robbie Tilleard","url":"https://robbietilleard.com","sameAs":["https://twitter.com/rtilleard","https://www.linkedin.com/in/robert-tilleard/"]},"publisher":{"@type":"Organization","name":"htmlEdit","logo":{"@type":"ImageObject","url":"https://htmledit.io/icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://htmledit.io/blog/building-a-mac-app-with-claude"},"url":"https://htmledit.io/blog/building-a-mac-app-with-claude","image":"https://htmledit.io/og.png","keywords":"building, ai, mac","articleSection":"Productivity","inLanguage":"en","wordCount":688}
+</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/"><span class="mark">¶</span> htmlEdit</a>
+  <nav>
+    <a href="/blog/">Blog</a>
+    <a href="/#download">Get the app</a>
+  </nav>
+</header>
+<main>
+<article>
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a></nav>
+  <header class="post-head">
+    <h1>What I Learned Building a Mac App With Claude</h1>
+    <p class="byline">By <a href="https://robbietilleard.com" rel="author">Robbie Tilleard</a> · <time datetime="2026-07-09">9 July 2026</time> · 5 min read</p>
+  </header>
+  <div class="tldr"><strong>In short:</strong> Building a Mac app with an AI coding assistant sped up the mechanical parts and let me stay in the interesting decisions, but it moved the hard work to judgement: deciding what to build and knowing when the generated code was actually right.</div>
+  <div class="post-body">
+<p>I built htmlEdit, a Mac app, with a lot of help from Claude as a coding assistant. The honest headline: it made me dramatically faster at the mechanical parts and left the hard parts exactly as hard as they always were. Here is what actually changed about the work, and what did not.</p><h2>Where it sped me up</h2><p>The biggest shift is the cost of starting. A blank file used to carry a small tax, the friction of remembering the boilerplate, the setup, the shape of the thing. That tax is mostly gone. I could describe what I wanted and get a working first version to react to, which is a much better place to think from than an empty editor.</p><p>It is at its best on the well-trodden stuff: wiring, plumbing, the parts of an app that thousands of people have written before. When I needed a standard piece of Mac app scaffolding or a fiddly bit of glue code, the assistant produced it quickly and I moved on. That is real time saved, and more importantly, it kept me in the interesting decisions rather than lost in mechanics.</p><p>Trying things also got cheaper. When you can spin up a rough version of an idea in minutes, you try three approaches instead of committing to the first one because it was expensive to build. That changed how I explored the design, not just how fast I typed.</p><h2>Where I had to slow it down</h2><p>The flip side is that a confident assistant will happily take a big leap in the wrong direction. Left unchecked, it generates a lot of plausible code at once, and if the direction is off, you now have a large, plausible-looking mistake to unpick. That is worse than a small one, because it looks fine until you look closely.</p><p>What worked for me was insisting on small, verifiable steps. Build one thing, run it, confirm it does what I meant, then move on. The discipline is the same one I use for writing documents: let the AI do the heavy lifting, but keep the steps small enough that you can actually check them. When I let it run too far ahead, I paid for it later.</p><p>Correctness is still on me. The assistant does not know whether the app is right, only whether the code plausibly does what I asked. Knowing whether what I asked for was the right thing, and whether the result actually behaves, is judgement, and judgement did not get automated.</p><h2>What actually changed about the work</h2><p>The bottleneck moved. It used to sit in the typing: knowing the exact syntax, remembering the API, getting the code out of your head and onto the screen. Now that part is cheap, and the bottleneck sits in knowing what you want. Deciding what to build, what to leave out, what "good" looks like for this particular app. Those decisions became the whole job, which is as it should be.</p><p>There is a nice symmetry here with the app itself. htmlEdit exists because AI is great at producing a document but the last mile of finishing it is judgement, better done by hand than by re-prompting. Building the app taught me the same lesson from the other side: AI is great at producing code, but the last mile of deciding whether it is right is still yours. In both cases the tool gets you most of the way, fast, and the value you add is at the edges.</p><h2>Would I do it again</h2><p>Without hesitation. The app is open source and you can read every line of it, warts and all, on <a href="https://htmledit.io">the site</a>. It is a genuinely different way to build: less time spent on mechanics, more spent on decisions. But it is not magic, and treating it as magic is how people end up with confident nonsense. Keep the steps small, own the judgement, and let it take the drudgery. That balance is the whole skill.</p><p>If you are using AI to make documents rather than software, the same instinct applies. I wrote about the <a href="/blog/draft-to-done-workflow">draft-to-done workflow</a> for exactly that.</p>
+  </div>
+  <section class="takeaways"><h2>Key takeaways</h2><ul><li>AI collapses the cost of getting started and trying things.</li>
+<li>It is strongest on the mechanical, well-trodden parts.</li>
+<li>You still own the decisions: scope, taste and correctness.</li>
+<li>Small, verifiable steps beat big generated leaps.</li>
+<li>The bottleneck shifts from typing to knowing what you want.</li></ul></section>
+  <aside class="cta">
+    <p><strong>htmlEdit</strong> lets you edit AI-generated HTML documents visually, then save them. It is a Mac app and a browser extension, it is local and private, and it is <a href="https://github.com/rtilleard/htmlEdit">open source</a>.</p>
+    <p><a class="btn" href="/#download">Get htmlEdit</a></p>
+  </aside>
+  <section class="related"><h2>Related reading</h2><ul><li><a href="/blog/why-ai-writes-html">Why AI Tools Keep Giving You HTML (and Why That's a Gift)</a></li>
+<li><a href="/blog/last-mile-editing">The Last-Mile Problem: Editing AI Output Without Re-Prompting</a></li>
+<li><a href="/blog/stop-re-prompting">Stop Re-Prompting: A Faster Loop for Fixing AI Drafts</a></li></ul></section>
+</article>
+</main>
+<footer class="sitefoot">
+  <p><a href="/">htmlEdit</a> , edit HTML documents like a document. <a href="/blog/">Blog</a> · <a href="/privacy">Privacy</a> · <a href="https://github.com/rtilleard/htmlEdit">Open source</a></p>
+  <p class="muted">Written by <a href="https://robbietilleard.com" rel="author">Robbie Tilleard</a>.</p>
+</footer>
+</body>
+</html>

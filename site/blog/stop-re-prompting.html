@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stop Re-Prompting: A Faster Loop for Fixing AI Drafts | htmlEdit</title>
+<meta name="description" content="Re-prompting to fix small errors in AI drafts is slow and unreliable. Here is a faster edit-in-place loop that saves the good bits and fixes the rest.">
+<link rel="canonical" href="https://htmledit.io/blog/stop-re-prompting">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Robbie Tilleard">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="htmlEdit">
+<meta property="og:title" content="Stop Re-Prompting: A Faster Loop for Fixing AI Drafts">
+<meta property="og:description" content="Re-prompting to fix small errors in AI drafts is slow and unreliable. Here is a faster edit-in-place loop that saves the good bits and fixes the rest.">
+<meta property="og:url" content="https://htmledit.io/blog/stop-re-prompting">
+<meta property="og:image" content="https://htmledit.io/og.png">
+<meta property="article:published_time" content="2026-06-09">
+<meta property="article:modified_time" content="2026-06-09">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Stop Re-Prompting: A Faster Loop for Fixing AI Drafts">
+<meta name="twitter:description" content="Re-prompting to fix small errors in AI drafts is slow and unreliable. Here is a faster edit-in-place loop that saves the good bits and fixes the rest.">
+<meta name="twitter:image" content="https://htmledit.io/og.png">
+<meta name="twitter:creator" content="@rtilleard">
+<link rel="icon" href="/icon.png" type="image/png">
+<link rel="stylesheet" href="/blog/blog.css">
+<link rel="alternate" type="application/rss+xml" title="htmlEdit blog" href="/feed.xml">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"Stop Re-Prompting: A Faster Loop for Fixing AI Drafts","description":"Re-prompting to fix small errors in AI drafts is slow and unreliable. Here is a faster edit-in-place loop that saves the good bits and fixes the rest.","datePublished":"2026-06-09","dateModified":"2026-06-09","author":{"@type":"Person","name":"Robbie Tilleard","url":"https://robbietilleard.com","sameAs":["https://twitter.com/rtilleard","https://www.linkedin.com/in/robert-tilleard/"]},"publisher":{"@type":"Organization","name":"htmlEdit","logo":{"@type":"ImageObject","url":"https://htmledit.io/icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://htmledit.io/blog/stop-re-prompting"},"url":"https://htmledit.io/blog/stop-re-prompting","image":"https://htmledit.io/og.png","keywords":"ai, productivity, editing","articleSection":"Productivity","inLanguage":"en","wordCount":692}
+</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/"><span class="mark">¶</span> htmlEdit</a>
+  <nav>
+    <a href="/blog/">Blog</a>
+    <a href="/#download">Get the app</a>
+  </nav>
+</header>
+<main>
+<article>
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a></nav>
+  <header class="post-head">
+    <h1>Stop Re-Prompting: A Faster Loop for Fixing AI Drafts</h1>
+    <p class="byline">By <a href="https://robbietilleard.com" rel="author">Robbie Tilleard</a> · <time datetime="2026-06-09">9 June 2026</time> · 4 min read</p>
+  </header>
+  <div class="tldr"><strong>In short:</strong> When an AI draft is 90 percent right, don't re-prompt to fix the last 10 percent. Edit the output directly, because re-prompting risks losing the good parts and burns your time.</div>
+  <div class="post-body">
+<p>If an AI draft comes back 90 percent right, stop re-prompting to fix the last 10 percent. Edit it directly instead. Re-prompting a draft you are mostly happy with is a bad trade: you risk the model rewriting the parts you liked, and you spend more time describing a fix than the fix would take by hand.</p><p>I fell into this trap for months. The output would be close, a sentence would be clumsy or a heading wrong, and my instinct was to type "nearly there, just change the second paragraph and keep everything else the same." Sometimes it worked. Often it didn't. The model would helpfully improve three other things I never asked it to touch, and now I had two problems instead of one.</p><h2>Why the loop feels productive but isn't</h2><p>Re-prompting feels like progress because you are doing something. You are typing, the machine is working, words are appearing. But look at the actual result. You have handed control back to a system that treats your whole document as up for grabs. Each round is a fresh roll of the dice. The good sentence you had? It might survive. It might not.</p><p>There is a behavioural trap here worth naming. The variable reward of "maybe this prompt nails it" keeps you pulling the lever, the same mechanism that makes slot machines sticky. You remember the times re-prompting worked and quietly forget the times it sent you backwards. So the loop persists even when a calm look at the evidence says edit the thing yourself.</p><h2>The faster loop: edit in place</h2><p>The alternative is simple. Once a draft is more right than wrong, switch modes. Stop being a prompter and start being an editor. Read it, mark what's wrong, fix those specific bits, leave the rest alone. You keep every good decision the model made and you change only what needs changing.</p><p>This is faster for a reason behavioural science would recognise: you are reducing the number of steps between intention and result. Re-prompting adds a translation layer. You have to convert "this word is wrong" into instructions precise enough that a model won't over-correct, then wait, then re-read the whole output to check it didn't break something else. Direct editing collapses all of that into one action. See the problem, fix the problem, done.</p><p>The catch is friction at the switch. Editing raw AI output can be its own chore, especially with HTML documents where the useful text is buried in tags. If fixing one heading means scrolling through a wall of markup, the path of least resistance is to sigh and re-prompt again. That is exactly why the loop survives. The fix is to make editing the easy option. I built <a href="https://htmledit.io">htmlEdit</a> for this: it lets you edit an HTML document visually, clicking and typing on the rendered page like a Word doc, so correcting a draft costs seconds instead of a re-prompt.</p><h2>When re-prompting is still the right call</h2><p>To be fair to the lever, there are times to pull it. If the draft is structurally wrong, wrong argument, wrong shape, wrong audience, then editing sentence by sentence is polishing a thing you'll throw away. Re-prompt. If you want three genuinely different takes to choose between, re-prompt. If you don't yet know what good looks like and you're exploring, re-prompt.</p><p>The rule is about the size of the gap. Big gap, structural problem, unclear direction: go back to the model. Small gap, you know exactly what's wrong, you're happy with most of it: pick up the pen. Most of the frustration people feel with AI drafts comes from using the wrong tool for a small gap, treating a typo like a strategy problem.</p><h2>A quick test before you re-prompt</h2><p>Next time your finger hovers over the prompt box, ask one question: could I make this exact change faster by hand? If yes, do that. You will keep the good work, dodge the collateral damage, and break a habit that quietly eats your afternoons. The best AI workflow is the one where you know when to stop prompting and start editing, not the one with the cleverest prompts.</p>
+  </div>
+  <section class="takeaways"><h2>Key takeaways</h2><ul><li>Re-prompting a near-finished draft often changes things you were happy with.</li>
+<li>Treat a good AI draft as a document to edit, not a slot machine to pull again.</li>
+<li>Fixing text directly is faster and gives you full control over the result.</li>
+<li>Reserve re-prompting for structural changes, not small tweaks.</li>
+<li>The friction of switching to editing is worth paying once to break the loop.</li></ul></section>
+  <aside class="cta">
+    <p><strong>htmlEdit</strong> lets you edit AI-generated HTML documents visually, then save them. It is a Mac app and a browser extension, it is local and private, and it is <a href="https://github.com/rtilleard/htmlEdit">open source</a>.</p>
+    <p><a class="btn" href="/#download">Get htmlEdit</a></p>
+  </aside>
+  <section class="related"><h2>Related reading</h2><ul><li><a href="/blog/why-ai-writes-html">Why AI Tools Keep Giving You HTML (and Why That's a Gift)</a></li>
+<li><a href="/blog/wysiwyg-live-page">WYSIWYG vs Raw Code: Editing on the Live Page</a></li>
+<li><a href="/blog/last-mile-editing">The Last-Mile Problem: Editing AI Output Without Re-Prompting</a></li></ul></section>
+</article>
+</main>
+<footer class="sitefoot">
+  <p><a href="/">htmlEdit</a> , edit HTML documents like a document. <a href="/blog/">Blog</a> · <a href="/privacy">Privacy</a> · <a href="https://github.com/rtilleard/htmlEdit">Open source</a></p>
+  <p class="muted">Written by <a href="https://robbietilleard.com" rel="author">Robbie Tilleard</a>.</p>
+</footer>
+</body>
+</html>

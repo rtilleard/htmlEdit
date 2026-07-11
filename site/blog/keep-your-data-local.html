@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keeping Your Data Local When You Edit AI Docs | htmlEdit</title>
+<meta name="description" content="AI writes your document, but where does it go when you edit it? The case for local, private editing with no accounts, no uploads, and no tracking.">
+<link rel="canonical" href="https://htmledit.io/blog/keep-your-data-local">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Robbie Tilleard">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="htmlEdit">
+<meta property="og:title" content="Keeping Your Data Local When You Edit AI Docs">
+<meta property="og:description" content="AI writes your document, but where does it go when you edit it? The case for local, private editing with no accounts, no uploads, and no tracking.">
+<meta property="og:url" content="https://htmledit.io/blog/keep-your-data-local">
+<meta property="og:image" content="https://htmledit.io/og.png">
+<meta property="article:published_time" content="2026-07-04">
+<meta property="article:modified_time" content="2026-07-04">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Keeping Your Data Local When You Edit AI Docs">
+<meta name="twitter:description" content="AI writes your document, but where does it go when you edit it? The case for local, private editing with no accounts, no uploads, and no tracking.">
+<meta name="twitter:image" content="https://htmledit.io/og.png">
+<meta name="twitter:creator" content="@rtilleard">
+<link rel="icon" href="/icon.png" type="image/png">
+<link rel="stylesheet" href="/blog/blog.css">
+<link rel="alternate" type="application/rss+xml" title="htmlEdit blog" href="/feed.xml">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"Keeping Your Data Local When You Edit AI Docs","description":"AI writes your document, but where does it go when you edit it? The case for local, private editing with no accounts, no uploads, and no tracking.","datePublished":"2026-07-04","dateModified":"2026-07-04","author":{"@type":"Person","name":"Robbie Tilleard","url":"https://robbietilleard.com","sameAs":["https://twitter.com/rtilleard","https://www.linkedin.com/in/robert-tilleard/"]},"publisher":{"@type":"Organization","name":"htmlEdit","logo":{"@type":"ImageObject","url":"https://htmledit.io/icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://htmledit.io/blog/keep-your-data-local"},"url":"https://htmledit.io/blog/keep-your-data-local","image":"https://htmledit.io/og.png","keywords":"privacy, ai, tools","articleSection":"Productivity","inLanguage":"en","wordCount":687}
+</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/"><span class="mark">¶</span> htmlEdit</a>
+  <nav>
+    <a href="/blog/">Blog</a>
+    <a href="/#download">Get the app</a>
+  </nav>
+</header>
+<main>
+<article>
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a></nav>
+  <header class="post-head">
+    <h1>Keeping Your Data Local When You Edit AI Docs</h1>
+    <p class="byline">By <a href="https://robbietilleard.com" rel="author">Robbie Tilleard</a> · <time datetime="2026-07-04">4 July 2026</time> · 4 min read</p>
+  </header>
+  <div class="tldr"><strong>In short:</strong> Editing an AI-generated document should not mean uploading it to someone else's server. Local, private tools keep your work on your machine, with no account, no upload and no tracking.</div>
+  <div class="post-body">
+<p>If a tool asks you to upload a document before you can edit it, you have just made a copy of that document on a server you do not control. For a shopping list, fine. For a client memo, a contract draft, a board paper, or anything with a name and a number in it, that should give you pause. The safest place for your work is your own machine, and the good news is that a lot of editing genuinely does not need to leave it.</p><p>This matters more now because of how AI documents get made. You prompt a model, it produces something, and then you want to tidy it up. That tidying step is where a surprising amount of quiet data movement happens, because the obvious tools for it are web apps that need your file on their side to work.</p><h2>Where your document actually goes</h2><p>Think about the journey of a single document. You write it, an AI helps draft it, and now it exists as a file. You want to change three things. You paste it into a slick web editor. That editor uploads the text to its backend, stores it, maybe keeps a version history, maybe logs analytics about what you did, maybe uses it to improve their product depending on the terms you did not read.</p><p>None of that is necessarily malicious. But it is a copy of your work, sitting somewhere else, governed by someone else's policy, exposed to someone else's next data breach. You have added risk to a document for the sake of a convenience that, technically, you did not need.</p><p>The alternative is boring in the best way. Editing text and HTML is not computationally hard. It can happen entirely on your device, in memory, with nothing sent anywhere. When that is how a tool works, the privacy question mostly disappears, because there is no copy to leak.</p><h2>What local and private actually looks like</h2><p>A genuinely private editing tool has a few tells. It does not ask you to create an account, because it has no server to hold one. It works offline, which is a giveaway that nothing is being uploaded. It does not track what you do, because there is nowhere for the tracking to go. And ideally it is open source, so the privacy claim is something you can check rather than something you are asked to believe.</p><p>That last point is the important one. Anyone can put "we respect your privacy" on a landing page. Open source turns that from a promise into something verifiable. If the code is public and it runs locally, the claim is auditable.</p><p>This is the design behind <a href="https://htmledit.io">htmlEdit</a>. It edits AI-generated HTML documents visually, on your own machine, with no accounts and no tracking, and the code is open source under an MIT licence. Your document is opened, edited and saved locally. It is not uploaded to be processed, because it does not need to be.</p><h2>The quiet default worth changing</h2><p>The wider habit worth breaking is treating upload as free. We have been nudged into assuming that everything lives in the cloud and that this is simply how software works now. For collaboration and sharing, cloud has real value. But for the private act of fixing your own document, the cloud is often just a middleman collecting a copy you never meant to hand over.</p><p>You would not photocopy a confidential letter and post it to a company you have never heard of just to fix a typo. Uploading a sensitive document to a random web editor is closer to that than it feels, because the interface is smooth and the copy is invisible.</p><p>The rule is simple. Keep the private stuff local. Use the cloud when you are actually collaborating or publishing, and keep it out of the loop when you are just editing your own work. Ask where the document goes before you paste it in. If the honest answer is "nowhere, it stays on your machine," that is the tool you want for anything you would not want read aloud.</p>
+  </div>
+  <section class="takeaways"><h2>Key takeaways</h2><ul><li>Every upload is a copy you no longer fully control.</li>
+<li>Many editing tools quietly route your document through their servers.</li>
+<li>Local processing means the work never leaves your machine.</li>
+<li>No account means no data trail, no breach exposure, no lock-in.</li>
+<li>Open source lets you verify the privacy claim instead of trusting it.</li></ul></section>
+  <aside class="cta">
+    <p><strong>htmlEdit</strong> lets you edit AI-generated HTML documents visually, then save them. It is a Mac app and a browser extension, it is local and private, and it is <a href="https://github.com/rtilleard/htmlEdit">open source</a>.</p>
+    <p><a class="btn" href="/#download">Get htmlEdit</a></p>
+  </aside>
+  <section class="related"><h2>Related reading</h2><ul><li><a href="/blog/why-ai-writes-html">Why AI Tools Keep Giving You HTML (and Why That's a Gift)</a></li>
+<li><a href="/blog/wysiwyg-live-page">WYSIWYG vs Raw Code: Editing on the Live Page</a></li>
+<li><a href="/blog/last-mile-editing">The Last-Mile Problem: Editing AI Output Without Re-Prompting</a></li></ul></section>
+</article>
+</main>
+<footer class="sitefoot">
+  <p><a href="/">htmlEdit</a> , edit HTML documents like a document. <a href="/blog/">Blog</a> · <a href="/privacy">Privacy</a> · <a href="https://github.com/rtilleard/htmlEdit">Open source</a></p>
+  <p class="muted">Written by <a href="https://robbietilleard.com" rel="author">Robbie Tilleard</a>.</p>
+</footer>
+</body>
+</html>

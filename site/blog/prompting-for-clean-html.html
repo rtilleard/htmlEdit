@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prompting for Clean, Editable HTML | htmlEdit</title>
+<meta name="description" content="How to prompt an AI for HTML documents you can actually edit later: simple structure, inline styles, no framework cruft. Practical tips that save hours.">
+<link rel="canonical" href="https://htmledit.io/blog/prompting-for-clean-html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Robbie Tilleard">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="htmlEdit">
+<meta property="og:title" content="Prompting for Clean, Editable HTML">
+<meta property="og:description" content="How to prompt an AI for HTML documents you can actually edit later: simple structure, inline styles, no framework cruft. Practical tips that save hours.">
+<meta property="og:url" content="https://htmledit.io/blog/prompting-for-clean-html">
+<meta property="og:image" content="https://htmledit.io/og.png">
+<meta property="article:published_time" content="2026-06-19">
+<meta property="article:modified_time" content="2026-06-19">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Prompting for Clean, Editable HTML">
+<meta name="twitter:description" content="How to prompt an AI for HTML documents you can actually edit later: simple structure, inline styles, no framework cruft. Practical tips that save hours.">
+<meta name="twitter:image" content="https://htmledit.io/og.png">
+<meta name="twitter:creator" content="@rtilleard">
+<link rel="icon" href="/icon.png" type="image/png">
+<link rel="stylesheet" href="/blog/blog.css">
+<link rel="alternate" type="application/rss+xml" title="htmlEdit blog" href="/feed.xml">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"Prompting for Clean, Editable HTML","description":"How to prompt an AI for HTML documents you can actually edit later: simple structure, inline styles, no framework cruft. Practical tips that save hours.","datePublished":"2026-06-19","dateModified":"2026-06-19","author":{"@type":"Person","name":"Robbie Tilleard","url":"https://robbietilleard.com","sameAs":["https://twitter.com/rtilleard","https://www.linkedin.com/in/robert-tilleard/"]},"publisher":{"@type":"Organization","name":"htmlEdit","logo":{"@type":"ImageObject","url":"https://htmledit.io/icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://htmledit.io/blog/prompting-for-clean-html"},"url":"https://htmledit.io/blog/prompting-for-clean-html","image":"https://htmledit.io/og.png","keywords":"prompting, html, workflow","articleSection":"Productivity","inLanguage":"en","wordCount":642}
+</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/"><span class="mark">¶</span> htmlEdit</a>
+  <nav>
+    <a href="/blog/">Blog</a>
+    <a href="/#download">Get the app</a>
+  </nav>
+</header>
+<main>
+<article>
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a></nav>
+  <header class="post-head">
+    <h1>Prompting for Clean, Editable HTML</h1>
+    <p class="byline">By <a href="https://robbietilleard.com" rel="author">Robbie Tilleard</a> · <time datetime="2026-06-19">19 June 2026</time> · 4 min read</p>
+  </header>
+  <div class="tldr"><strong>In short:</strong> Ask for a single self-contained HTML file with clear structure and inline styles, and you get a document you can edit later instead of a tangle you have to re-prompt.</div>
+  <div class="post-body">
+<p>If you want AI-generated HTML you can actually edit later, ask for it explicitly. The difference between a document you can tidy in two minutes and one you have to keep re-prompting comes down to how you frame the request. Left to its own devices, a model will sometimes hand you a small pile of framework cruft: linked stylesheets, odd class names, nested wrappers you did not ask for. Here is how I keep the output clean.</p><h2>Ask for one self-contained file</h2><p>Start every request the same way: "Give me a single self-contained HTML file with styles inline." This matters more than it sounds. A self-contained file has no external dependencies, so it opens and looks right anywhere, and there is nothing to lose when you move it around. It also means everything you might want to change lives in one place, which makes later edits far less painful.</p><p>Avoid the default where the model reaches for a CSS framework or splits things across files. You do not need a build step to send someone a one-pager. You need one file that renders.</p><h2>Insist on real structure</h2><p>The single biggest lever on editability is semantic structure. Ask for proper headings, sections, paragraphs and lists rather than a soup of styled divs. When the document has real bones, it reads better, it prints better, and it is far easier to change later because each piece is a distinct, labelled thing rather than an anonymous block.</p><p>I will often add: "Use clear headings and short paragraphs. No unnecessary wrappers." It sounds fussy. It saves you every time you come back to the document a week later and try to find the bit you want to change.</p><h2>Keep the styling simple</h2><p>You want the page to look considered, not clever. Simple, readable styling ages well and is easy to nudge. Heavy, over-engineered CSS looks impressive in the moment and becomes a nightmare the first time you want to change a colour or move something. Ask for restrained styling: sensible fonts, comfortable spacing, a bit of hierarchy. Tell the model the document is for reading and sharing, not for showing off.</p><p>Context helps the model make better choices. "This is a one-page briefing for a client" produces different, better output than "write me some HTML." Say who it is for and what it needs to do.</p><h2>Why clean HTML pays off</h2><p>The payoff comes at editing time. Clean, well-structured HTML is a document you can open and adjust directly, the way you would a word processor file. Messy HTML is a document you are afraid to touch, so you go back to the chat and re-prompt, and the model rewrites half the things you liked. That loop is the tax you pay for accepting tangled output in the first place.</p><p>This is the whole idea behind <a href="https://htmledit.io">htmlEdit</a>: once you have a clean HTML document, you should be able to point, click and type to change it, rather than hand-editing raw markup or starting the conversation over. Clean structure and simple styling are what make that possible. The better the HTML the model gives you, the less friction there is when you fix the last few things by hand.</p><h2>A prompt you can reuse</h2><p>Here is roughly what I paste in:</p><blockquote><p>Give me a single self-contained HTML file with inline styles. Use semantic structure: clear headings, short paragraphs, lists where useful. Keep the styling simple and readable, no frameworks or external files. This is a [one-pager / memo / brief] for [audience].</p></blockquote><p>Fill in the brackets and you will get output that is pleasant to read and, more importantly, easy to finish. Once it lands, resist the urge to re-prompt small fixes. Just edit the page. If you want the full end-to-end, I wrote about turning a chat into a finished document in <a href="/blog/chat-to-one-pager">this piece</a>.</p>
+  </div>
+  <section class="takeaways"><h2>Key takeaways</h2><ul><li>Specify a single self-contained file so everything travels together.</li>
+<li>Ask for semantic structure: real headings, sections and lists.</li>
+<li>Prefer inline or simple styles over heavy frameworks.</li>
+<li>Tell the model what the document is for, not just what to write.</li>
+<li>Clean HTML is easy to edit by hand later; messy HTML traps you in re-prompting.</li></ul></section>
+  <aside class="cta">
+    <p><strong>htmlEdit</strong> lets you edit AI-generated HTML documents visually, then save them. It is a Mac app and a browser extension, it is local and private, and it is <a href="https://github.com/rtilleard/htmlEdit">open source</a>.</p>
+    <p><a class="btn" href="/#download">Get htmlEdit</a></p>
+  </aside>
+  <section class="related"><h2>Related reading</h2><ul><li><a href="/blog/why-ai-writes-html">Why AI Tools Keep Giving You HTML (and Why That's a Gift)</a></li>
+<li><a href="/blog/html-as-a-document">The Case for HTML as a Document Format</a></li>
+<li><a href="/blog/wysiwyg-live-page">WYSIWYG vs Raw Code: Editing on the Live Page</a></li></ul></section>
+</article>
+</main>
+<footer class="sitefoot">
+  <p><a href="/">htmlEdit</a> , edit HTML documents like a document. <a href="/blog/">Blog</a> · <a href="/privacy">Privacy</a> · <a href="https://github.com/rtilleard/htmlEdit">Open source</a></p>
+  <p class="muted">Written by <a href="https://robbietilleard.com" rel="author">Robbie Tilleard</a>.</p>
+</footer>
+</body>
+</html>
