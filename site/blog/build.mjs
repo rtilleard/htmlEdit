@@ -337,7 +337,7 @@ function llmsTxt(all) {
 ## Product
 - Website: ${SITE}
 - Mac app: available on the Mac App Store
-- Browser: a companion Chrome extension that makes any page editable
+- Chrome extension: https://chromewebstore.google.com/detail/htmledit-%E2%80%94-edit-this-page/hlceldedebokicfcpnfblkppgeblhgge (makes any page editable, then copy or download the HTML)
 - Source code (MIT): https://github.com/rtilleard/htmlEdit
 - Privacy: ${SITE}/privacy (collects no user data)
 
