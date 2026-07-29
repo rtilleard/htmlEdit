@@ -18,30 +18,40 @@ struct ContentView: View {
 
     private var toolbar: some View {
         HStack(spacing: 2) {
-            ToolButton(symbol: "bold", help: "Bold") { bridge.exec("bold") }
-            ToolButton(symbol: "italic", help: "Italic") { bridge.exec("italic") }
-            ToolButton(symbol: "underline", help: "Underline") { bridge.exec("underline") }
-
-            separator
-
-            ToolButton(text: "H1", help: "Heading 1") { bridge.exec("formatBlock", value: "<h1>") }
-            ToolButton(text: "H2", help: "Heading 2") { bridge.exec("formatBlock", value: "<h2>") }
-            ToolButton(symbol: "paragraph", help: "Normal text") { bridge.exec("formatBlock", value: "<p>") }
-
-            separator
-
-            ToolButton(symbol: "list.bullet", help: "Bulleted list") { bridge.exec("insertUnorderedList") }
-            ToolButton(symbol: "list.number", help: "Numbered list") { bridge.exec("insertOrderedList") }
-            ToolButton(symbol: "link", help: "Add link") { addLink() }
+            formattingControls
+                .disabled(!bridge.editing)
+                .opacity(bridge.editing ? 1 : 0.35)
 
             Spacer(minLength: 12)
 
-            ToolButton(symbol: "arrow.uturn.backward", help: "Undo") { bridge.exec("undo") }
-            ToolButton(symbol: "arrow.uturn.forward", help: "Redo") { bridge.exec("redo") }
+            ModeToggle(editing: bridge.editing) { bridge.setEditing(!bridge.editing) }
         }
         .padding(.horizontal, 14)
         .padding(.vertical, 9)
         .background(.regularMaterial)
+    }
+
+    @ViewBuilder private var formattingControls: some View {
+        ToolButton(symbol: "bold", help: "Bold") { bridge.exec("bold") }
+        ToolButton(symbol: "italic", help: "Italic") { bridge.exec("italic") }
+        ToolButton(symbol: "underline", help: "Underline") { bridge.exec("underline") }
+
+        separator
+
+        ToolButton(text: "H1", help: "Heading 1") { bridge.exec("formatBlock", value: "<h1>") }
+        ToolButton(text: "H2", help: "Heading 2") { bridge.exec("formatBlock", value: "<h2>") }
+        ToolButton(symbol: "paragraph", help: "Normal text") { bridge.exec("formatBlock", value: "<p>") }
+
+        separator
+
+        ToolButton(symbol: "list.bullet", help: "Bulleted list") { bridge.exec("insertUnorderedList") }
+        ToolButton(symbol: "list.number", help: "Numbered list") { bridge.exec("insertOrderedList") }
+        ToolButton(symbol: "link", help: "Add link") { addLink() }
+
+        separator
+
+        ToolButton(symbol: "arrow.uturn.backward", help: "Undo") { bridge.exec("undo") }
+        ToolButton(symbol: "arrow.uturn.forward", help: "Redo") { bridge.exec("redo") }
     }
 
     private var separator: some View {
@@ -86,6 +96,45 @@ struct ContentView: View {
         if alert.runModal() == .alertFirstButtonReturn, !field.stringValue.isEmpty {
             bridge.exec("createLink", value: field.stringValue)
         }
+    }
+}
+
+// MARK: - Edit / Preview toggle
+
+/// Switches between editing the page and previewing it. In preview the page is
+/// a normal interactive browser, so slides, buttons and keyboard navigation work.
+private struct ModeToggle: View {
+    let editing: Bool
+    var action: () -> Void
+    @State private var hovering = false
+
+    var body: some View {
+        Button(action: action) {
+            HStack(spacing: 5) {
+                Image(systemName: editing ? "eye" : "pencil")
+                    .font(.system(size: 12, weight: .semibold))
+                Text(editing ? "Preview" : "Edit")
+                    .font(.system(size: 12, weight: .semibold))
+            }
+            .foregroundStyle(.primary)
+            .padding(.horizontal, 12)
+            .frame(height: 26)
+            .background(
+                RoundedRectangle(cornerRadius: 7, style: .continuous)
+                    .fill(hovering ? Color.primary.opacity(0.12) : Color.primary.opacity(0.06))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 7, style: .continuous)
+                            .stroke(Color.primary.opacity(0.12), lineWidth: 1)
+                    )
+            )
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .onHover { hovering = $0 }
+        .animation(.easeOut(duration: 0.12), value: hovering)
+        .help(editing
+              ? "Preview: interact with the page (slides, buttons, links)"
+              : "Edit: click and type to change the page")
     }
 }
 

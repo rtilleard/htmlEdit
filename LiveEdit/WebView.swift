@@ -60,11 +60,13 @@ struct WebView: NSViewRepresentable {
         init(_ parent: WebView) { self.parent = parent }
 
         func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-            // Turn the whole rendered page into an editable surface, preserve the
-            // doctype on save, and report every change back to the document.
+            // Turn the rendered page into an editable surface (unless the user is
+            // in Preview mode), preserve the doctype on save, and report every
+            // change back to the document.
+            let mode = parent.bridge.editing ? "on" : "off"
             let js = """
             (function () {
-              document.designMode = 'on';
+              document.designMode = '\(mode)';
               function doctype() {
                 var d = document.doctype;
                 if (!d) return '';
