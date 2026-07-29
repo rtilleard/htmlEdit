@@ -61,7 +61,7 @@ struct WebView: NSViewRepresentable {
 
         func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
             // Turn the rendered page into an editable surface (unless the user is
-            // in Preview mode), preserve the doctype on save, and report every
+            // in Interact mode), preserve the doctype on save, and report every
             // change back to the document.
             let mode = parent.bridge.editing ? "on" : "off"
             let js = """

@@ -99,10 +99,10 @@ struct ContentView: View {
     }
 }
 
-// MARK: - Edit / Preview toggle
+// MARK: - Edit / Interact toggle
 
-/// Switches between editing the page and previewing it. In preview the page is
-/// a normal interactive browser, so slides, buttons and keyboard navigation work.
+/// Switches between editing the page and interacting with it. In Interact mode
+/// the page is a normal browser, so slides, buttons and keyboard navigation work.
 private struct ModeToggle: View {
     let editing: Bool
     var action: () -> Void
@@ -111,9 +111,9 @@ private struct ModeToggle: View {
     var body: some View {
         Button(action: action) {
             HStack(spacing: 5) {
-                Image(systemName: editing ? "eye" : "pencil")
+                Image(systemName: editing ? "hand.tap" : "pencil")
                     .font(.system(size: 12, weight: .semibold))
-                Text(editing ? "Preview" : "Edit")
+                Text(editing ? "Interact" : "Edit")
                     .font(.system(size: 12, weight: .semibold))
             }
             .foregroundStyle(.primary)
@@ -133,7 +133,7 @@ private struct ModeToggle: View {
         .onHover { hovering = $0 }
         .animation(.easeOut(duration: 0.12), value: hovering)
         .help(editing
-              ? "Preview: interact with the page (slides, buttons, links)"
+              ? "Interact: use the page normally (slides, buttons, links)"
               : "Edit: click and type to change the page")
     }
 }
